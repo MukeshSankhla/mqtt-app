@@ -12,9 +12,9 @@ Installation:
 * Run the Docker containers in detached mode with the command 'docker-compose up -d'
 
 Usage:
-* Open the Docker Mosquitto terminal
-* Manually publish a message using the command: 'mosquitto_pub -h localhost -t "/events" -m '{"sensor_value":20.2}''
-* Open the mqtt_reader log to receive the values
+* Open the Docker Mosquitto terminal by using windows comand prompt 'docker exec -it mqtt-main-mosquitto-1 sh'.
+* Manually publish a message using the command: 'mosquitto_pub -h localhost -t "/events" -m '{"sensor_value":20.2}''.
+* Open the mqtt_reader log to receive the values.
 
 Code Explanation:
 * The mqtt_reader.py script uses the gmqtt library to connect to the Mosquitto MQTT broker and listen for messages on the /events topic. The on_message function is called when a message is received, and it prints the sensor value to the console.
