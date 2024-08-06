@@ -64,6 +64,7 @@ async def on_message(client, topic, payload, qos, properties):
 ```
 * on_connect: called when the client connects to the MQTT broker. It subscribes to the /events topic with QoS 0.
 * on_message: called when a message is received on the subscribed topic. It decodes the payload, parses the JSON data, extracts the sensor_value, and logs and prints the value.
+
 Defining the Main Function: The main function is the entry point of the app. It:
 ```bash
 async def main():
