@@ -93,6 +93,7 @@ async def main():
 * Connects to the MQTT broker at mosquitto:1883.
 * Runs forever using asyncio.Future().
 * When the app is interrupted, it disconnects from the MQTT broker.
+
 Running the App:
 ```bash
 if __name__ == '__main__':
